@@ -1,0 +1,14 @@
+{
+  "name": "systemjs",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "lite-server": "^2.1.0",
+    "systemjs": "^0.19.22"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
