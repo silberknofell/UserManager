@@ -1,22 +1,25 @@
-import {User} from "./user";
-/**
- * Created by Michael on 11.07.2016.
- */
-
-export class Manager {
-    user:User;
-
-    constructor() {
-        this.user = new User();
-        alert("***");
-    }
-
-    public action() {
-        alert(this.user.login);
-    }
-}
+import {SchildImporter} from "./schildImporter";
 
 function los() {
-    let m = new Manager();
-    m.action();
 }
+
+var schildIn = <HTMLTextAreaElement> document.getElementById("schildIn");
+console.log(schildIn);
+schildIn.addEventListener('dragover',function () { this.className = 'hover'; return false; });
+schildIn.addEventListener('dragend', function () { this.className = ''; return false; });
+schildIn.addEventListener('drop', function (e) {
+    this.className = '';
+    e.preventDefault();
+
+    var file = e.dataTransfer.files[0],
+        reader = new FileReader();
+    reader.onload= function (event) {
+        console.log(event.target);
+        let schildImporter = new SchildImporter(this.result);
+        schildIn.value = schildImporter.getUserListText();
+    };
+    console.log(file);
+    reader.readAsText(file);
+
+    return false;
+});

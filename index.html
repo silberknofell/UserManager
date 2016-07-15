@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8"/>
     <title>SystemJS</title>
     <script src="node_modules/systemjs/dist/system.js"></script>
-    <script src="systemConfig.js"></script>
+    <script src="systemjs.config.js"></script>
+
+    <style>
+        #schildIn { border: 10px dashed #ccc; width: 800px; height: 300px; margin: 20px auto;}
+        #schildIn.hover { border: 10px dashed #333; }
+    </style>
     <script>
-        System.import('src/main');
+        System.import('src/main')
+                .then(null, console.error.bind(console));
     </script>
+
 </head>
 <body>
-<button onclick="los()">LOS!</button>
+<button id="losi">LOS!</button>
+<textarea id="schildIn">
+    Hier Schilddaten hinziehen ...
+</textarea>
+<p id="status">File API & FileReader API not supported</p>
+    <script>
+                state = document.getElementById('status');
+
+        if (typeof window.FileReader === 'undefined') {
+            state.className = 'fail';
+        } else {
+            state.className = 'success';
+            state.innerHTML = 'File API & FileReader available';
+        }
+
+
+    </script>
+
+
 </body>
 </html>
