@@ -4,25 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4643e70b-0f7a-4e11-a138-c83041d7beda" name="Default" comment="SchildImporter fast fertig&#10;-&gt; Akzente noch beseitigen&#10;Drag and Drop">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/actorInterface.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/actorInterface.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/actorInterface.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/idInterface.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/importerInterface.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/listComparer.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serverImporter.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/userActor.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/userListsActor.ts" />
+    <list default="true" id="4643e70b-0f7a-4e11-a138-c83041d7beda" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js.map" afterPath="$PROJECT_DIR$/src/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.ts" afterPath="$PROJECT_DIR$/src/main.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/schildImporter.ts" afterPath="$PROJECT_DIR$/src/schildImporter.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/user.js" afterPath="$PROJECT_DIR$/src/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/user.js.map" afterPath="$PROJECT_DIR$/src/user.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/user.ts" afterPath="$PROJECT_DIR$/src/user.ts" />
     </list>
     <ignored path="UserManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,9 +29,21 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schildImporter.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/schildImporter.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userActor.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userActor.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/userActor.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            <state relative-caret-position="765">
+              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
                 <element signature="n#!!doc;n#UserActorText#0" expanded="false" />
@@ -109,7 +105,6 @@
         <option value="$PROJECT_DIR$/fileUpoadTest.html" />
         <option value="$PROJECT_DIR$/interfaces/idInterface.ts" />
         <option value="$PROJECT_DIR$/interfaces/importerInterface.ts" />
-        <option value="$PROJECT_DIR$/src/schildImporter.ts" />
         <option value="$PROJECT_DIR$/interfaces/actorInterfaces.ts" />
         <option value="$PROJECT_DIR$/src/listComparer.ts" />
         <option value="$PROJECT_DIR$/src/serverImporter.ts" />
@@ -118,6 +113,7 @@
         <option value="$PROJECT_DIR$/src/userListsActor.ts" />
         <option value="$PROJECT_DIR$/src/user.ts" />
         <option value="$PROJECT_DIR$/src/userActor.ts" />
+        <option value="$PROJECT_DIR$/src/schildImporter.ts" />
       </list>
     </option>
   </component>
@@ -287,7 +283,7 @@
       <workItem from="1468421832087" duration="10155000" />
       <workItem from="1468508295901" duration="7527000" />
       <workItem from="1468590480090" duration="5422000" />
-      <workItem from="1469280650884" duration="14150000" />
+      <workItem from="1469280650884" duration="14794000" />
     </task>
     <task id="LOCAL-00001" summary="SchildImporter fast fertig&#10;-&gt; Akzente noch beseitigen&#10;Drag and Drop">
       <created>1468596064397</created>
@@ -296,11 +292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468596064397</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Unterschiede in Userlisten suchen implementiert&#10;userActor implementiert -&gt; Textausgabe für Löschen, Anlegen, ändern von Usern&#10;zum Testen: ServerImporter wie Schildimporter">
+      <created>1469298660826</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1469298660826</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43132000" />
+    <option name="totallyTimeSpent" value="43776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -361,10 +364,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SchildImporter fast fertig&#10;-&gt; Akzente noch beseitigen&#10;Drag and Drop" />
-    <option name="LAST_COMMIT_MESSAGE" value="SchildImporter fast fertig&#10;-&gt; Akzente noch beseitigen&#10;Drag and Drop" />
+    <MESSAGE value="Unterschiede in Userlisten suchen implementiert&#10;userActor implementiert -&gt; Textausgabe für Löschen, Anlegen, ändern von Usern&#10;zum Testen: ServerImporter wie Schildimporter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unterschiede in Userlisten suchen implementiert&#10;userActor implementiert -&gt; Textausgabe für Löschen, Anlegen, ändern von Usern&#10;zum Testen: ServerImporter wie Schildimporter" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -676,21 +682,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/schildImporter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/user.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="677">
           <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userActor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+            <element signature="n#!!doc;n#UserActorText#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -706,19 +713,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userActor.ts">
+    <entry file="file://$PROJECT_DIR$/src/schildImporter.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        <state relative-caret-position="544">
+          <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
-            <element signature="n#!!doc;n#UserActorText#0" expanded="false" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -36,7 +36,8 @@ export class SchildImporter implements Importer{
     }
 
     private parse() {
-        this.lines = this.schildSource.split("\n");
+
+        this.lines = this.schildSource.split("\n").filter(l => l.trim().length>0);
         this.header = SchildImporter.lineToArray(this.lines.shift());
         this.feldNummern={};
 
