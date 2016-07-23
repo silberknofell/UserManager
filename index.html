@@ -7,8 +7,10 @@
     <script src="systemjs.config.js"></script>
 
     <style>
-        #schildIn { border: 10px dashed #ccc; width: 800px; height: 300px; margin: 20px auto;}
+        #schildIn { border: 10px dashed #00cc00; width: 800px; height: 300px; margin: 20px auto;}
         #schildIn.hover { border: 10px dashed #333; }
+        #serverIn { border: 10px dashed #0000cc; width: 800px; height: 300px; margin: 20px auto;}
+        #serverIn.hover { border: 10px dashed #333; }
     </style>
     <script>
         System.import('src/main')
@@ -17,10 +19,13 @@
 
 </head>
 <body>
-<button id="losi">LOS!</button>
 <textarea id="schildIn">
     Hier Schilddaten hinziehen ...
 </textarea>
+<textarea id="serverIn">
+    Hier Serverdaten hinziehen ...
+</textarea>
+<button id="los">LOS!</button>
 <p id="status">File API & FileReader API not supported</p>
     <script>
                 state = document.getElementById('status');
@@ -31,7 +36,6 @@
             state.className = 'success';
             state.innerHTML = 'File API & FileReader available';
         }
-
 
     </script>
 

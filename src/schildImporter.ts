@@ -1,4 +1,5 @@
 import {User} from "./user";
+import {Importer} from "../interfaces/importerInterface";
 /**
  * Created by Michael on 11.07.2016.
  */
@@ -8,7 +9,7 @@ const schildGebString:string = "Geburtsdatum";
 const schildNachnameString:string = "Nachname";
 const schildVornameString:string = "Vorname";
 
-export class SchildImporter {
+export class SchildImporter implements Importer{
     private lines:string[];
     private header:string[];
     private feldNummern;
@@ -23,11 +24,15 @@ export class SchildImporter {
         this.userList =  this.lines.map(l => this.getUser(l)).filter(u => !u.leer());
     }
 
-    public getUserListText():string {
+    public getListText():string {
         let stringArray = this.lines.map( l =>
             this.getUser(l).toString()
         );
         return stringArray.join('\n\n');
+    }
+
+    public getList():User[] {
+        return this.userList;
     }
 
     private parse() {

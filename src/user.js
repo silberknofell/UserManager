@@ -28,6 +28,7 @@ var User = (function () {
         return User.randomLetter() +
             User.randomDigit() +
             User.randomDigit() +
+            "@" +
             User.randomLetter() +
             User.randomDigit() +
             User.randomDigit();
@@ -61,6 +62,21 @@ var User = (function () {
     };
     User.prototype.leer = function () {
         return this.id == 0;
+    };
+    User.prototype.difference = function (user2) {
+        var result = [];
+        this.check('id', user2, result);
+        this.check('vorname', user2, result);
+        this.check('nachname', user2, result);
+        this.check('login', user2, result);
+        this.check('gruppe', user2, result);
+        this.check('klasse', user2, result);
+        return result;
+    };
+    User.prototype.check = function (s, user, result) {
+        if (this[s] != user[s]) {
+            result.push(s);
+        }
     };
     return User;
 }());
